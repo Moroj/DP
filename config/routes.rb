@@ -7,7 +7,7 @@ DP::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
   match '/signup', to: 'users#new'
 
-  get "users/new"
+  resources :users
   
   
 
